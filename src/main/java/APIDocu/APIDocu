@@ -1,0 +1,18 @@
+API와 API 문서 보는 법
+
+System.out.println();
+println는 메서드이고, System 클래스이고 out는 그 클래스의 필드(변수)이다
+System을 인스턴스화한적이 없음에도 불구하고 필드 out에 접근할 수 있는 것은 out이 static이라는 것을 암시한다
+
+public static final PrintStream out = null;
+
+public void println(int x) {
+        synchronized (this) {
+            print(x);
+            newLine();
+        }
+    }
+
+java.lang은 자동으로 import 해줌
+
+API란 자바 시스템을 제어하기 위해서 자바에서 제공하는 명령어들을 의미한다
