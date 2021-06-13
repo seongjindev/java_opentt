@@ -6,7 +6,7 @@ class OverloadingDemo {
 
 //    void printA (){
 //    }
-//    int printA(){ //리턴값만 다를 수 없다
+//    int printA(){ //리턴형만 다를 수 없다
 //        return 0;
 //    }
 }
