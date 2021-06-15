@@ -38,6 +38,13 @@ class CalMinus extends Calculator{
         System.out.println("-----avg"+(this.left+this.right));
     }
 }
+//다형성
+class CalulatorExcute{
+    public static void excute(Calculator cal){
+        System.out.println("실행결과");
+        cal.run();
+    }
+}
 
 public class CalculatorMain {
     public static void main(String[] args){
@@ -48,6 +55,18 @@ public class CalculatorMain {
         CalMinus cm = new CalMinus();
         cm.setOp(10,20);
         cm.run();
+
+        //다형성
+        Calculator cltp = new CalPlus();
+        Calculator cltm = new CalMinus();
+        cltp.setOp(20,30);
+        cltp.run();
+        cltm.setOp(20,30);
+        cltm.run();
+        System.out.println("------------------");
+        CalulatorExcute.excute(cltp);
+        CalulatorExcute.excute(cltm);
+
 
     }
 }
