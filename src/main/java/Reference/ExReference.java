@@ -1,0 +1,32 @@
+package Reference;
+
+class A{
+    public int id;
+
+    A(int id) {
+        this.id = id;
+    }
+}
+
+public class ExReference {
+    public static void runValue(){
+        int a = 1;
+        int b = a; //복제
+        b =2;
+        System.out.println("runValue, "+ a);
+    }
+    public static void runReference(){
+        A a = new A(1);
+        A b = a; //참조
+        b = new A(2);
+        //b.id = 2;
+        System.out.println("runReference, "+ a.id);
+    }
+    public static void main(String[] args){
+        runValue();
+        runReference();
+
+
+    }
+
+}
