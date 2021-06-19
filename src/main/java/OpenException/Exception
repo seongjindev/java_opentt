@@ -1,0 +1,41 @@
+예외(Exception) - 문법
+오류제어, 오류처리
+예외란 프로그램을 만들 프로그래머가 상정한 정상적인 처리에서 벗어나는 경우에 이를 처리하기 위한 방법이다
+
+try{
+    예외의 발생이 예상되는 로직
+}catch(예외클래스 인스턴스){
+    예외가 발생했을 때 실행되는 로직
+}finally{
+    예외여부와 관계없이 실행되는 로직
+}
+
+다양한 예외처리
+
+finally
+사용할 때 예)DB랑 연결할 때 연결후 항상 끊기 위해서
+
+예외 던지기(throws)
+
+예외 만들기
+
+주요 예외
+예외    사용해야 할 상황
+IllegalArgumentException	매개변수가 의도하지 않은 상황을 유발시킬 때
+IllegalStateException	메소드를 호출하기 위한 상태가 아닐 때
+NullPointerException	매개 변수 값이 null 일 때
+IndexOutOfBoundsException	인덱스 매개 변수 값이 범위를 벗어날 때
+ArithmeticException	산술적인 연산에 오류가 있을 때
+
+unchecked
+확인시점 - 런타임 시점
+명시적으로 하지 않아도 됨
+checked
+확인시점 - 컴파일 시점
+try catch나 throws를 사용해서 처리를해야함
+
+
+checked 예외 - RuntimeException을 제외한 Exception의 하위 클래스
+unchekced 예외 - RuntimeException의 하위 클래스
+
+checked 예외는 반드시 예외처리를 해야 하는 되는 것이고, unchekced는 해도 되고 안 해도 되는 예외다.

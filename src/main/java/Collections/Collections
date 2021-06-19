@@ -1,0 +1,36 @@
+배열과 컬렉션즈 프레임워크
+배열은 크기를 변경할 수 없다
+
+Coleections Framework
+
+Collection
+    Set - 중복X
+        HashSet
+        LinkedHashSet
+        TreeSet
+    List - 중복O
+        ArrayList
+        Vector
+        LinkedList
+    Queue
+        priorityQueue
+
+Map - key-value
+    SortedMap
+        TreeMap
+    Hashtable
+    LinkedHashMap
+    HashMap
+
+List-Set
+차이점은 List 중복을 허용하고, Set은 허용하지 않는다
+List 순서가 있고, Set는 순서가 없다
+
+집합 - Set
+
+iterator - 반복
+
+Map - 수학에서 함수라는 개념
+key - value
+key은 중복이 허용안됨
+value는 중복이 허용됨
